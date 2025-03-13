@@ -1,6 +1,8 @@
 # Author: Le Anh Hao
 # MSSV: 2251050023
 
+import matplotlib.pyplot as plt
+import numpy as np
 
 # ==================== FOR LOOPS =======================
 # # Bai 1
@@ -91,7 +93,6 @@
 # print(twoSum(3, 4))
 
 # Bai 2
-import numpy as np
 # M = np.array([[1,2,3], [4,5,6], [7,8,9]])
 # V =  np.array([1,2,3])
 
@@ -200,84 +201,83 @@ import numpy as np
 # print("Ma tran M M:\n", M)
 
 # Bai 15
-import matplotlib.pyplot as plt
 # 0.1: buoc nhay
-# x = np.arange(-5, 6, 0.1)
-# y = x**2
+x = np.arange(-5, 6, 0.1)
+y = x**2
 
-# plt.plot(x, y)
+plt.plot(x, y)
 
-# plt.title("Do thi ham so y = x^2")
-# plt.xlabel("X")
-# plt.ylabel("Y")
-# plt.grid(True)
-# plt.show()
+plt.title("Do thi ham so y = x^2")
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.grid(True)
+plt.show()
 
 # Bai 16
-# x = np.linspace(-5, 5, 50)
-# y = x**2
+x = np.linspace(-5, 5, 50)
+y = x**2
 
-# # Vẽ đồ thị
-# plt.plot(x, y)
-# plt.title("Đồ thị hàm số y = x^2")
-# plt.xlabel("x")
-# plt.ylabel("y")
-# plt.grid(True)
-# plt.show()
+# Vẽ đồ thị
+plt.plot(x, y)
+plt.title("Đồ thị hàm số y = x^2")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid(True)
+plt.show()
 
 # Bai 18
-# x = np.linspace(-5, 5, 50)
-# y = np.exp(x)
+x = np.linspace(-5, 5, 50)
+y = np.exp(x)
 
-# plt.plot(x, y)
-# plt.title("Đồ thị hàm số y = exp(x)")
-# plt.xlabel("x")
-# plt.ylabel("y")
-# plt.grid(True)
-# plt.show()
+plt.plot(x, y)
+plt.title("Đồ thị hàm số y = exp(x)")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid(True)
+plt.show()
 
 # Bai 19
-# x = np.linspace(0, 5, 50)
-# y = np.log(x)
+x = np.linspace(0, 5, 50)
+y = np.log(x)
 
-# plt.plot(x, y)
-# plt.title("Đồ thị hàm số y = log(x)")
-# plt.xlabel("x")
-# plt.ylabel("y")
-# plt.grid(True)
-# plt.show()
+plt.plot(x, y)
+plt.title("Đồ thị hàm số y = log(x)")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid(True)
+plt.show()
 
 # Bai 20
-# x = np.linspace(-5, 5, 100)
-# x_log = np.linspace(0, 5, 100)
+x = np.linspace(-5, 5, 100)
+x_log = np.linspace(0, 5, 100)
 
-# y1 = np.exp(x)
-# y2 = np.exp(2*x)
+y1 = np.exp(x)
+y2 = np.exp(2*x)
 
-# y3 = np.log(x_log)
-# y4 = np.log(2*x_log)
+y3 = np.log(x_log)
+y4 = np.log(2*x_log)
 
-# # Do thi 1: 2 hang 1 cot, vi tri 1
-# plt.subplot(2, 1, 1)
-# plt.plot(x, y1, label="y = exp(x)")
-# plt.plot(x, y2, label="y = exp(2*x)")
-# plt.title("Đồ thị hàm số y = exp(x) và y = exp(2*x)")
-# plt.xlabel("x")
-# plt.ylabel("y")
-# # Hien chu thich
-# plt.legend()
-# plt.grid(True)
+# Do thi 1: 2 hang 1 cot, vi tri 1
+plt.subplot(2, 1, 1)
+plt.plot(x, y1, label="y = exp(x)")
+plt.plot(x, y2, label="y = exp(2*x)")
+plt.title("Đồ thị hàm số y = exp(x) và y = exp(2*x)")
+plt.xlabel("x")
+plt.ylabel("y")
+# Hien chu thich
+plt.legend()
+plt.grid(True)
 
-# # Do thi 2: 2 hang 1 cot, vi tri 2
-# plt.subplot(2, 1, 2)
-# plt.plot(x_log, y3, label="y = log(x)")
-# plt.plot(x_log, y4, label="y = log(2*x)")
-# plt.title("Đồ thị hàm số y = log(x) và y = log(2*x)")
-# plt.xlabel("x")
-# plt.ylabel("y")
-# plt.legend()
-# plt.grid(True)
-# # Dieu chinh khoang cach giua do thi, title, label
-# plt.tight_layout()
+# Do thi 2: 2 hang 1 cot, vi tri 2
+plt.subplot(2, 1, 2)
+plt.plot(x_log, y3, label="y = log(x)")
+plt.plot(x_log, y4, label="y = log(2*x)")
+plt.title("Đồ thị hàm số y = log(x) và y = log(2*x)")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.legend()
+plt.grid(True)
+# Dieu chinh khoang cach giua do thi, title, label
+plt.tight_layout()
 
-# plt.show()
+plt.show()
