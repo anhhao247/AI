@@ -24,7 +24,7 @@ import numpy as np
 #         tong += i
 # print(f"Tong cac so le tu {start} den {end} la: {tong}")
 
-#Bai 4
+# Bai 4
 # mydict={"a": 1, "b": 2, "c": 3, "d": 4}
 
 # for i in mydict:
@@ -97,7 +97,7 @@ import numpy as np
 # V =  np.array([1,2,3])
 
 # def rank(matrix):
-#     return np.linalg.matrix_rank(matrix) 
+#     return np.linalg.matrix_rank(matrix)
 
 # print(rank(V))
 
@@ -119,7 +119,7 @@ import numpy as np
 
 # print(chuyenVi(M))
 
-             
+
 # =============== MATH ======================
 # Bai 5
 # x = np.array([2, 7])
@@ -252,10 +252,10 @@ x = np.linspace(-5, 5, 100)
 x_log = np.linspace(0, 5, 100)
 
 y1 = np.exp(x)
-y2 = np.exp(2*x)
+y2 = np.exp(2 * x)
 
 y3 = np.log(x_log)
-y4 = np.log(2*x_log)
+y4 = np.log(2 * x_log)
 
 # Do thi 1: 2 hang 1 cot, vi tri 1
 plt.subplot(2, 1, 1)
