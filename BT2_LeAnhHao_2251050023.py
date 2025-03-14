@@ -372,6 +372,45 @@ def bai_2_seaborn():
     print(sns.get_dataset_names())
 
 
+# Bai 3
+def bai_3_seaborn():
+    tips_df = sns.load_dataset('tips')
+    print("3.",tips_df.head())
+# Bai 4
+def bai_4_seaborn():
+    tips = sns.load_dataset('tips')
+    sns.scatterplot(x='total_bill', y='tip', data=tips)
+    plt.show()
+# Bai 5
+def bai_5_seaborn():
+    sns.set(font_scale=1.2)
+    sns.set_style("darkgrid")
+    tips = sns.load_dataset('tips')
+    sns.scatterplot(x='total_bill', y='tip', data=tips)
+    plt.show()
+# Bai 6
+def bai_6_seaborn():
+    tips = sns.load_dataset('tips')
+    sns.scatterplot(x='total_bill', y='tip', hue='day', data=tips)
+    plt.show()
+# Bai 7
+def bai_7_seaborn():
+    tips = sns.load_dataset('tips')
+    sns.scatterplot(x='total_bill', y='tip', size='size', data=tips)
+    plt.show()
+# Bai 8
+def bai_8_seaborn():
+    tips = sns.load_dataset('tips')
+    g = sns.FacetGrid(tips, col="time")
+    g.map(sns.scatterplot, 'total_bill', 'tip')
+    plt.show()
+# Bai 9
+def bai_9_seaborn():
+    tips = sns.load_dataset('tips')
+    g = sns.FacetGrid(tips, col="time", row="sex")
+    g.map(sns.scatterplot, 'total_bill', 'tip')
+    plt.show()
+
 # ====================== RUN =========================================
 # bai_1()
 # bai_2()
@@ -398,3 +437,10 @@ def bai_2_seaborn():
 # bai_23()
 
 bai_2_seaborn()
+bai_3_seaborn()
+bai_4_seaborn()
+bai_5_seaborn()
+bai_6_seaborn()
+bai_7_seaborn()
+bai_8_seaborn()
+bai_9_seaborn()
