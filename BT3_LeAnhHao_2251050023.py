@@ -411,6 +411,6 @@ def bai_33():
                 f"Ảnh ở chỉ số {i+30} bị phân loại sai. Thực tế {y_eval[i]}, Dự đoán: {y_pred[i]}"
             )
 
-
+# run
 for i in range(1, 34):
     eval(f"bai_{i}()")
