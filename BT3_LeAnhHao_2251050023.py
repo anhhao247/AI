@@ -12,23 +12,6 @@ from sklearn.linear_model import LinearRegression, LogisticRegression
 import mglearn
 from sklearn.svm import LinearSVC, SVC
 
-# import ssl
-# import certifi
-# ssl._create_default_https_context = ssl.create_default_context
-# ssl._create_default_https
-
-# iris = datasets.load_iris()  # load data_set
-# X, y = iris.data[:, :2], iris.targetmg
-# X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=33)
-# scaler = preprocessing.StandardScaler().fit(X_train)
-# X_train = scaler.transform(X_train)
-# X_test = scaler.transform(X_test)
-# knn = neighbors.KNeighborsClassifier(n_neighbors=5)
-# knn.fit(X_train, y_train)
-# y_pred = knn.predict(X_test)
-# accuracy_score(y_test, y_pred)
-#
-# print(accuracy_score(y_test, y_pred))
 
 
 def bai_1():
@@ -269,8 +252,8 @@ def bai_20():
 
 def bai_21():
     print("=======Bài 21==========")
-    global faces
     faces = fetch_lfw_people(min_faces_per_person=70, resize=0.4)
+
     print("Mô tả bộ dữ liệu: ", faces.DESCR)
 
 
